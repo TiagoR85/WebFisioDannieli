@@ -38,7 +38,6 @@
                     <ul class="navbar-nav ml-auto">
                         @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FisioDannieli</a>*@
                         <li class="nav-item active"><a asp-controller="Home" asp-action="Index" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#Services" class="nav-link">Serviços</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
                         <li class="nav-item"><a href="doctor.html" class="nav-link">Doctors</a></li>
@@ -57,11 +56,21 @@
         </main>
     </div>
     @* Início *@
-
-    <section class="ftco-services" >
+    @*<div class="hero-wrap" style="background-image: url('/images/bg_1.jpg'); background-attachment:fixed;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                <div class="col-md-8 ftco-animate text-center">
+                    <h1 class="mb-4">Não se acostume com a dor!</h1>
+                    <p>Procure tratar a causa do seu problema, não somente os sintomas.</p>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <section class="ftco-services">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-md-4 ftco-animate py-5 nav-link-wrap" id="Services">
+                <div class="col-md-4 ftco-animate py-5 nav-link-wrap">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link px-4 active" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-master" role="tab" aria-controls="v-pills-master" aria-selected="true"><span class="mr-3 flaticon-cardiogram"></span> Fisioterapia</a>
 
@@ -73,7 +82,7 @@
 
                         <a class="nav-link px-4" id="v-pills-sea-tab" data-toggle="pill" href="#v-pills-sea" role="tab" aria-controls="v-pills-sea" aria-selected="false"><span class="mr-3 flaticon-vision"></span> Reiki</a>
 
-                        <a class="nav-link px-4" id="v-pills-ventosa-tab" data-toggle="pill" href="#v-pills-ventosa" role="tab" aria-controls="v-pills-ventosa" aria-selected="false"><span class="mr-3 flaticon-ambulance"></span> Ventosaterapia</a>
+                        <a class="nav-link px-4" id="v-pills-spa-tab" data-toggle="pill" href="#v-pills-ventosa" role="tab" aria-controls="v-pills-ventosa" aria-selected="false"><span class="mr-3 flaticon-ambulance"></span> Ventosaterapia</a>
 
                         <a class="nav-link px-4" id="v-pills-spa-tab" data-toggle="pill" href="#v-pills-spa" role="tab" aria-controls="v-pills-spa" aria-selected="false"><span class="mr-3 flaticon-ambulance"></span> Auriculoterapia</a>
                     </div>

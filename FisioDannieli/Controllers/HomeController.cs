@@ -11,6 +11,8 @@ namespace FisioDannieli.Controllers
 {
     public class HomeController : Controller
     {
+        [ViewData]
+        public bool paginaPrincipal { get => true; set { } }
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -19,6 +21,11 @@ namespace FisioDannieli.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Services()
         {
             return View();
         }
