@@ -25,11 +25,13 @@ namespace FisioDannieli.Controllers
             return View();
         }
 
+        [Route("Services")]
         public IActionResult Services()
         {
             return View();
         }
 
+        [Route("Privacy")]
         public IActionResult Privacy()
         {
             return View();

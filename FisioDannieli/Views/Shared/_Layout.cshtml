@@ -39,13 +39,13 @@
                         @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FisioDannieli</a>*@
                         <li class="nav-item active"><a asp-controller="Home" asp-action="Index" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#Services" class="nav-link">Serviços</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#Formacoes" class="nav-link">Formações</a></li>
                         <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
                         <li class="nav-item"><a href="doctor.html" class="nav-link">Doctors</a></li>
-                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a asp-controller="Blog" asp-action="Index" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#Contato" class="nav-link">Contact</a></li>
                         <li class="nav-item"><a asp-controller="Home" asp-action="Privacy" class="nav-link">Privacy</a></li>
-                        <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalAppointment"><span>Make an Appointment</span></a></li>
+                        <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalAppointment"><span>Contato</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +58,7 @@
     </div>
     @* Início *@
 
-    <section class="ftco-services" >
+    <section class="ftco-services">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-md-4 ftco-animate py-5 nav-link-wrap" id="Services">
@@ -85,56 +85,92 @@
                         <div class="tab-pane fade show active py-5" id="v-pills-master" role="tabpanel" aria-labelledby="v-pills-master-tab">
                             <span class="icon mb-3 d-block flaticon-cardiogram"></span>
                             <h2 class="mb-4">Fisioterapia</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>Fisioterapia é a ciência que estuda, diagnostica, previne e recupera pacientes com distúrbios cinéticos funcionais intercorrentes em órgãos e sistemas do corpo humano.</p>
+                            <p>O objetivo desta área é preservar, manter, desenvolver ou restaurar (reabilitação) a integridade de órgãos, sistemas ou funções.</p>
+                            <p>Utiliza diversas ferramentas para o tratamento adequado, como terapia manual, eletroterapia, exercícios.</p>
+                            <p>Fisioterapeuta é um profissional da saúde de primeiro contato (não precisa de encaminhamento) e deve estar devidamente registrado no Conselho Regional de Fisioterapia e Terapia Ocupacional, com formação acadêmica superior, habilitado para construção do diagnóstico cinesiológico funcional, prescrever condutas fisioterapêutica, ordenação e indução do tratamento fisioterapêutico no paciente, bem como, acompanhamento da evolução do quadro clínico funcional e condições para alta do serviço.</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-buffet" role="tabpanel" aria-labelledby="v-pills-buffet-tab">
                             <span class="icon mb-3 d-block flaticon-neurology"></span>
                             <h2 class="mb-4">Osteopatia</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>A Osteopatia é um sistema de tratamento que se baseia em uma avaliação e diagnóstico diferencial. Portanto, sua ação é centrada no paciente e não centrado na doença, como o sistema convencional.</p>
+                            <p>Busca avaliar e tratar a causa do problema e não somente o sintoma.</p>
+                            <p>A Osteopatia visa a prevenção e tratamento de diversas disfunções, evitando o uso de fármacos (remédios) e cirurgias.</p>
+                            <p>O tratamento pode ser feito desde o recém nascido ao idoso, inclusive gestantes, cada um com suas particularidades.</p>
+                            <p>A Osteopatia age através da intervenção manual sobre os tecidos (articulações, músculos, fáscias, ligamentos, cápsulas, vísceras, tecido nervoso, vascular e linfático). É efetivo no tratamento de dores na coluna (cervical, dorsal, lombar), hérnia de disco, ciático; Articulações (tendinites, bursites, entorses, luxações); Tensões musculares; Dores de cabeça; Bruxismo; Refluxos, cólicas, constipação (adultos e bebês); Incontinência urinária/fecal (escapar urina/fezes); Dispareunia (dor na relação sexual); Enfim, integrando os sistemas corporais, o leque de atuação é bastante amplo.</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-fitness" role="tabpanel" aria-labelledby="v-pills-fitness-tab">
                             <span class="icon mb-3 d-block flaticon-stethoscope"></span>
                             <h2 class="mb-4">Barras de Access</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>É uma técnica onde são trabalhados, através do toque, 32 pontos na cabeça, onde cada barra formada corresponde a um aspecto da vida (alegria, tristeza, dinheiro, comunicação, sexualidade, etc).</p>
+                            <p>Quando conseguimos relaxar a nossa mente e chegar no ponto de limite zero, permitimos assim, enxergar com mais calma e clareza assuntos de qualquer área da nossa vida, esse vácuo é necessário para que se crie mais consciência de si, permitindo deixar ir pensamentos que nos limitam e impedem de enxergar por outras perspectivas, conseguindo  encontrar respostas ou resolver questões com mais facilidade. Tirando um pouco do que possa estar encoberto e trazendo mais clareza no campo mental.</p>
+                            <p>Diminuindo a ansiedade, o estresse e trazendo mais foco e concentração.</p>
+                            <p>Também ajuda a lidar com traumas de infância ou qualquer outro tipo de situação que gerou sentimentos negativos em você, como mágoas ou raiva e que você não conseguiu resolver.</p>
+                            <p>As ondas cerebrais irão diminuir e você  se sentirá mais relaxado, mais leve, mais consciente, desligando o piloto automático e acessando informações e percepções que nem mesmo sabia que tinha.</p>
+                            <p>Sem conotação religiosa, é uma terapia que auxilia na libertação de padrões e crenças a respeito de nós mesmos, da vida, do que é “certo ou errado” para cada um de nós.</p>
+                            <p>Qualquer pessoa pode receber e se beneficiar dessa técnica, não há nenhuma contraindicação, que tal se sentir com a mente mais leve e o corpo mais relaxado? (Rodrigues, P.)</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-reception" role="tabpanel" aria-labelledby="v-pills-reception-tab">
                             <span class="icon mb-3 d-block flaticon-tooth"></span>
                             <h2 class="mb-4">ThetaHealing</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>
+                                A intenção do ThetaHealing é semelhante ao de Barras de Access (ler explicação), proporcionando expansão de consciência, auto-conhecimento, limpeza de crenças limitantes, por exemplo.
+                                Porém, no ThetaHealing não há necessidade de toque, podendo ser realizado presencial ou à distância, e há diálogo entre terapeuta e paciente. O paciente fica ciente do que está sendo buscado e trabalhado.
+                            </p>
+                            <p>"A ciência moderna está chegando a uma era de iluminação. Novas vias de pensamentos estão emergindo, e a visão antiga de que a mente e o corpo são separados está se desintegrando.</p>
+                            <p>A consciência de que as emoções, os sentimentos e o poder do pensamento têm uma relação de sustentação e influência direta em nossa saúde física  está se tornando parte do pensamento dominante." (Vianna Stibal)</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-sea" role="tabpanel" aria-labelledby="v-pills-sea-tab">
                             <span class="icon mb-3 d-block flaticon-vision"></span>
                             <h2 class="mb-4">Reiki</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>O Reiki é uma técnica japonesa que utiliza a troca de energia para revitalizar e harmonizar o corpo.</p>
+                            <p>O terapeuta preparado (Reikiano) utiliza as mãos como fonte desta energia para promover bem-estar, felicidade e serenidade.</p>
+                            <p>Faz parte de terapias bioenergéticas, onde através de técnicas, exercícios e de respiração ativam o fluxo de energia do corpo, gerando benefícios ao organismo e à mente, como elevação da consciência, melhora dos pensamentos e comportamento.</p>
+                            <p>
+                                Alguns benefícios do Reiki:
+                                -Redução do estresse e ansiedade;
+                                -Equilíbrio hormonal e diminuição dos sintomas de estresse;
+                                -Redução das toxinas do organismo;
+                                -Equilíbrio emocional;
+                                -Aumento da criatividade;
+                                -Aumento da calma, tranquilidade e serenidade;
+                                -Aumento do autocontrole;
+                                -Diminuição da impulsividade;
+                                -Fortalecimento do sistema imune;
+                                -Diminuição dos sintomas da depressão e da síndrome do pânico.
+                            </p>
+                            <p>Benefícios do Reiki na gravidez</p>
+                            <p>O relaxamento e calma proporcionados pelo Reiki podem ser muito úteis durante a gestação, pois podem diminuir a insegurança e o estresse comuns neste período, e proporcionar um parto com maior tranquilidade.</p>
+                            <p>Além disto, o controle do estresse diminui a produção de hormônios negativos, como cortisol e adrenalina, que podem provocar aumento da pressão arterial, pré-eclâmpsia e aumentar o risco de parto prematuro.</p>
+                            <p>O Reiki é uma terapia complementar e não deve ser substituído por tratamento médico sem prescrição.</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-ventosa" role="tabpanel" aria-labelledby="v-pills-ventosa-tab">
                             <span class="icon mb-3 d-block flaticon-ambulance"></span>
                             <h2 class="mb-4">Ventosaterapia</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>“Uma técnica que consiste na aplicação de copos de vidro ou acrílico que tem como finalidade criar um vácuo e fazer uma sucção da pele.” Silvia Yamamoto</p>
+                            <p>Ao ser realizada a sucção da pele e a musculatura para dentro do copo, o vácuo formado estimula a circulação sanguínea e com este processo são liberadas as toxinas existentes do sangue.</p>
+                            <p>Pode ser utilizada de forma fixa ou deslizante. Quando a circulação é ativada através da ventosa, o aumento de sangue favorece a nutrição de músculos, alivia as tensões, dores musculares e articulares.</p>
+                            <p>Em alguns casos, o uso da técnica também é realizada com objetivos estéticos, como por exemplo o tratamento da ventosaterapia para celulites e estrias.</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-spa" role="tabpanel" aria-labelledby="v-pills-spa-tab">
                             <span class="icon mb-3 d-block flaticon-ambulance"></span>
                             <h2 class="mb-4">Auriculoterapia</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                            <p>A auriculoterapia é uma terapia da Medicina Tradicional Chinesa que consiste na estimulação com agulhas, sementes, objetos metálicos ou magnéticos em pontos específicos da orelha para aliviar dores ou tratar diversos problemas físicos ou psicológicos, como ansiedade, enxaqueca, obesidade, falta de apetite, alergia, depressão, vícios, tensões musculares, por exemplo.</p>
+                            <p>Além disso, a auriculoterapia ajuda a diagnosticar e a prevenir algumas doenças através da observação dos pontos específicos da orelha que se encontram alterados.</p>
+                            <p>O pavilhão auricular é considerado uma parte muito importante do corpo humano por constituir um microssistema, podendo refletir todas as mudanças fisiopatológicas dos órgãos e vísceras, dos membros, tronco, dos tecidos e dos órgãos dos sentidos. Quando se produz um estado patológico em qualquer parte do corpo humano isto é refletido na orelha com reações positivas de caráter e localidades diferentes, específicos a cada enfermidade.</p>
+                            <p>Auriculoterapia é uma terapia complementar e não deve ser substituído por tratamento médico sem prescrição.</p>
                             <p><a href="#" class="btn btn-primary">Saiba mais</a></p>
                         </div>
                     </div>
@@ -155,7 +191,10 @@
                                     <span class="ion-ios-arrow-forward"></span>
                                 </div>
                                 <h2>Local de atendimento</h2>
-                                <p>Even the all-powerful Pointing has no control about the blind.</p>
+                                <p>Florianópolis/ SC</p>
+                                <p>Clínica Osteopatia Florianópolis.</p>
+                                <p>Rua Almirante Lucas Boiteux, 54. Estreito.</p>
+                                <p>Próximo ao Detran.</p>
                             </a>
                             <a href="#" class="services-wrap ftco-animate">
                                 <div class="icon d-flex justify-content-center align-items-center">
@@ -163,7 +202,8 @@
                                     <span class="ion-ios-arrow-forward"></span>
                                 </div>
                                 <h2>Horário de atendimento</h2>
-                                <p>Even the all-powerful Pointing has no control about the blind.</p>
+                                <p>Atendimento com horário agendado.</p>
+                                <p>Segunda à sexta. 8h às 19h.</p>
                             </a>
                             <a href="#" class="services-wrap ftco-animate">
                                 <div class="icon d-flex justify-content-center align-items-center">
@@ -171,16 +211,17 @@
                                     <span class="ion-ios-arrow-forward"></span>
                                 </div>
                                 <h2>Contato</h2>
-                                <p>Even the all-powerful Pointing has no control about the blind.</p>
+                                <p>Clínica: 48 32070837 / 988489999</p>
+                                <p>Whatsapp: 48 984640906</p>
                             </a>
-                            <a href="#" class="services-wrap ftco-animate">
+                            @*<a href="#" class="services-wrap ftco-animate">
                                 <div class="icon d-flex justify-content-center align-items-center">
                                     <span class="ion-ios-arrow-back"></span>
                                     <span class="ion-ios-arrow-forward"></span>
                                 </div>
                                 <h2>24/7 Help &amp; Support</h2>
                                 <p>Even the all-powerful Pointing has no control about the blind.</p>
-                            </a>
+                            </a>*@
                         </div>
                     </div>
                 </div>
@@ -188,7 +229,7 @@
         </div>
     </section>
 
-    <section class="ftco-section">
+    <section class="ftco-section" id="Formacoes">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
