@@ -32,6 +32,7 @@ namespace FisioDannieli
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
             else
             {
