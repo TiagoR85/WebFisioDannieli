@@ -11,8 +11,6 @@ namespace FisioDannieli.Controllers
 {
     public class HomeController : Controller
     {
-        [ViewData]
-        public bool paginaPrincipal { get => true; set { } }
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
